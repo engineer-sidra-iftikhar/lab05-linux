@@ -1,0 +1,33 @@
+2026-10-16T07:35:28.547003+00:00 ubuntu sudo: engineer-sidra-iftikhar : TTY=/dev/pts/1 ; PWD=/home/engineer-sidra-iftikhar/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-16T07:35:28.745919+00:00 ubuntu groupadd[3936]: group added to /etc/group: name=lab5user, GID=1001
+2026-10-16T07:35:28.749900+00:00 ubuntu groupadd[3936]: group added to /etc/gshadow: name=lab5user
+2026-10-16T07:35:28.751248+00:00 ubuntu groupadd[3936]: new group: name=lab5user, GID=1001
+2026-10-16T07:35:28.782922+00:00 ubuntu useradd[3941]: new user: name=lab5user, UID=1001, GID=1001, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/0
+2026-10-16T07:37:01.197214+00:00 ubuntu chfn[3963]: changed user 'lab5user' information
+2026-10-16T07:37:03.643780+00:00 ubuntu gpasswd[3970]: members of group users set by root to engineer-sidra-iftikhar,lab5user
+2026-10-16T07:38:27.437914+00:00 ubuntu unix_chkpwd[4008]: password check failed for user (lab5user)
+2026-10-16T07:38:27.442651+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=engineer-sidra-iftikhar uid=1000 euid=0 tty=/dev/pts/1 ruser=engineer-sidra-iftikhar rhost=  user=lab5user
+2026-10-16T07:38:29.324102+00:00 ubuntu su[4006]: FAILED SU (to lab5user) engineer-sidra-iftikhar on pts/1
+2026-10-16T07:39:00.685532+00:00 ubuntu unix_chkpwd[4021]: password check failed for user (lab5user)
+2026-10-16T07:39:00.686051+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=engineer-sidra-iftikhar uid=1000 euid=0 tty=/dev/pts/1 ruser=engineer-sidra-iftikhar rhost=  user=lab5user
+2026-10-16T07:39:03.256888+00:00 ubuntu su[4019]: FAILED SU (to lab5user) engineer-sidra-iftikhar on pts/1
+2026-10-16T07:39:46.294704+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=engineer-sidra-iftikhar uid=1000 euid=0 tty=/dev/pts/1 ruser=engineer-sidra-iftikhar rhost=  user=lab5user
+2026-10-16T07:39:48.800586+00:00 ubuntu su[4033]: FAILED SU (to lab5user) engineer-sidra-iftikhar on pts/1
+2026-10-16T07:41:23.302424+00:00 ubuntu sudo: engineer-sidra-iftikhar : TTY=/dev/pts/1 ; PWD=/home/engineer-sidra-iftikhar/lab05-linux ; USER=root ; COMMAND=/usr/sbin/deluser --remove-home lab5user
+2026-10-16T07:41:23.518988+00:00 ubuntu userdel[4066]: delete user 'lab5user'
+2026-10-16T07:41:23.520969+00:00 ubuntu userdel[4066]: delete 'lab5user' from group 'users'
+2026-10-16T07:41:23.521751+00:00 ubuntu userdel[4066]: removed group 'lab5user' owned by 'lab5user'
+2026-10-16T07:41:23.521905+00:00 ubuntu userdel[4066]: removed shadow group 'lab5user' owned by 'lab5user'
+2026-10-16T07:41:23.522015+00:00 ubuntu userdel[4066]: delete 'lab5user' from shadow group 'users'
+2026-10-16T07:41:35.721573+00:00 ubuntu sudo: engineer-sidra-iftikhar : TTY=/dev/pts/1 ; PWD=/home/engineer-sidra-iftikhar/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-16T07:41:35.835609+00:00 ubuntu groupadd[4087]: group added to /etc/group: name=lab5user, GID=1001
+2026-10-16T07:41:35.842100+00:00 ubuntu groupadd[4087]: group added to /etc/gshadow: name=lab5user
+2026-10-16T07:41:35.844010+00:00 ubuntu groupadd[4087]: new group: name=lab5user, GID=1001
+2026-10-16T07:41:35.866714+00:00 ubuntu useradd[4092]: new user: name=lab5user, UID=1001, GID=1001, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/0
+2026-10-16T07:41:58.064442+00:00 ubuntu passwd[4103]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-16T07:42:05.414315+00:00 ubuntu chfn[4108]: changed user 'lab5user' information
+2026-10-16T07:42:26.257592+00:00 ubuntu gpasswd[4116]: members of group users set by root to engineer-sidra-iftikhar,lab5user
+2026-10-16T07:43:34.282495+00:00 ubuntu su[4149]: (to lab5user) engineer-sidra-iftikhar on pts/1
+2026-10-16T07:43:34.315795+00:00 ubuntu su[4149]: pam_unix(su-l:session): session opened for user lab5user(uid=1001) by engineer-sidra-iftikhar(uid=1000)
+2026-10-16T07:44:48.276064+00:00 ubuntu su[4149]: pam_unix(su-l:session): session closed for user lab5user
+2026-10-16T07:47:42.355644+00:00 ubuntu sudo: engineer-sidra-iftikhar : TTY=/dev/pts/1 ; PWD=/home/engineer-sidra-iftikhar/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
